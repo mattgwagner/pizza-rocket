@@ -1,0 +1,14 @@
+{
+  "name": "pizza-rocket",
+  "private": true,
+  "scripts": {
+    "start": "bun server.ts",
+    "deploy": "wrangler deploy",
+    "fuzz": "node e2e/fuzz.mjs",
+    "play": "node e2e/play.mjs",
+    "check": "node e2e/fuzz.mjs && node e2e/play.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}
